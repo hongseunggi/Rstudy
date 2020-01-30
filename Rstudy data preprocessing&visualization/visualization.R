@@ -1,4 +1,4 @@
-###
+### 
 us <- data.frame(state.x77, state.division)
 us
 library(treemap)
@@ -108,48 +108,48 @@ mosaicplot(~belief+sibling, data=santa,
 library(ggplot2)
 ggplot(mtcars, aes(x=gear)) + 
   geom_bar(stat="count", width=0.7, fill="black") + 
-  ggtitle("±â¾îÀÇ ¼ö") +
+  ggtitle("ê¸°ì–´ì˜ ìˆ˜") +
   theme(plot.title=element_text(size=25, face="bold", color="black")) +
-  labs(x="±â¾îÀÇ ¼ö", y="ºóµµ¼ö")
+  labs(x="ê¸°ì–´ì˜ ìˆ˜", y="ë¹ˆë„ìˆ˜")
 
 
 ###
 ggplot(mtcars, aes(x=cyl)) +
   geom_bar(width=0.7, fill="green") +
-  ggtitle("½Ç¸°´õ") +
+  ggtitle("ì‹¤ë¦°ë”") +
   theme(plot.title=element_text(size=10, face="bold", color="darkgreen")) +
-  labs(x="½Ç¸°´õ ¼ö", y="°³¼ö")
+  labs(x="ì‹¤ë¦°ë” ìˆ˜", y="ê°œìˆ˜")
 
 
 ###
 ggplot(mtcars, aes(x=mpg)) +
   geom_histogram(binwidth=5.0, color="white", fill="red") +
-  ggtitle("¿¬ºñ") +
+  ggtitle("ì—°ë¹„") +
   theme(plot.title=element_text(size=25, face="bold", color="black")) +
-  labs(x="¿¬ºñ", y="")
+  labs(x="ì—°ë¹„", y="")
 
 
 ###
 ggplot(trees, aes(x=Girth)) +
   geom_histogram(binwidth=3.0, color="white", 
                  fill="steelblue") +
-  ggtitle("³ª¹« µÑ·¹") +
+  ggtitle("ë‚˜ë¬´ ë‘˜ë ˆ") +
   theme(plot.title=element_text(size=15, face="bold", color="blue")) +
-  labs(x="³ª¹« µÑ·¹", y="¼ö")
+  labs(x="ë‚˜ë¬´ ë‘˜ë ˆ", y="ìˆ˜")
 
 
 ###
 ggplot(mtcars, aes(x=mpg, y=wt, 
                    color=as.factor(gear))) +
   geom_point(size=4) +
-  ggtitle("¿¬ºñ, Áß·®") +
+  ggtitle("ì—°ë¹„, ì¤‘ëŸ‰") +
   theme(plot.title=element_text(size=15, face="bold", color="grey"))
 
 
 ###
 ggplot(mtcars, aes(y=mpg, fill=as.factor(cyl))) +
   geom_boxplot() +
-  ggtitle("½Ç¸°´õ ¼ö/¿¬ºñ") +
+  ggtitle("ì‹¤ë¦°ë” ìˆ˜/ì—°ë¹„") +
   theme(plot.title=element_text(size=15, face="bold", color="black"))
 
 
