@@ -74,7 +74,7 @@ my
 library(mlbench)
 data("Ionosphere")
 myds<-Ionosphere
-str(myds)
+str(myds) 
 my <- aggregate(myds[,-c(1,2,35)], by=list(class=myds$Class, V1 = myds$V1), FUN = sd)
 my
 
